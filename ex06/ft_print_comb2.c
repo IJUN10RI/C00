@@ -6,7 +6,7 @@
 /*   By: msarigul <msarigul@student.42kocaeli.com.  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 15:39:42 by msarigul          #+#    #+#             */
-/*   Updated: 2022/02/12 12:13:47 by msarigul         ###   ########.tr       */
+/*   Updated: 2022/02/12 18:59:17 by msarigul         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,9 +34,9 @@ void	ft_print_comb2(void)
 			write(1, " ", 1);
 			ft_putchar(j / 10 + '0');
 			ft_putchar(j % 10 + '0');
-			j++;
 			if (!(i == 98 && j == 99))
-				write(1, ",", 1);
+				write(1, ", ", 2);
+			j++;
 		}
 		i++;
 	}

@@ -6,7 +6,7 @@
 /*   By: msarigul <msarigul@student.42kocaeli.com.  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 21:10:30 by msarigul          #+#    #+#             */
-/*   Updated: 2022/02/10 21:11:57 by msarigul         ###   ########.tr       */
+/*   Updated: 2022/02/12 18:37:38 by msarigul         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	ft_print_numbers(void)
 {
 	int		i;
 
-	i = 0 ;
+	i = '0' ;
 	while (i <= '9')
 	{
 		ft_putchar(i);
