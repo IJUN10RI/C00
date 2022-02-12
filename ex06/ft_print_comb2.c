@@ -1,30 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_reverse_alphabet.c                        :+:      :+:    :+:   */
+/*   ft_print_comb2.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: msarigul <msarigul@student.42kocaeli.com.  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/10 21:06:32 by msarigul          #+#    #+#             */
-/*   Updated: 2022/02/10 21:08:50 by msarigul         ###   ########.tr       */
+/*   Created: 2022/02/10 15:39:42 by msarigul          #+#    #+#             */
+/*   Updated: 2022/02/12 12:13:47 by msarigul         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putchar(char a)
+void	ft_putchar(char c)
 {
-	write(1, &a, 1);
+	write(1, &c, 1);
 }
 
-void	ft_print_reverse_alphabet(void)
+void	ft_print_comb2(void)
 {
-	char	a ;
+	int		i;
+	int		j;
 
-	a = 'z' ;
-	while (a >= 'a')
+	i = 0 ;
+	j = 0 ;
+	while (i <= 98)
 	{
-		ft_putchar(a);
-		a--;
+		j = i + 1 ;
+		while (j <= 99)
+		{
+			ft_putchar(i / 10 + '0');
+			ft_putchar(i % 10 + '0');
+			write(1, " ", 1);
+			ft_putchar(j / 10 + '0');
+			ft_putchar(j % 10 + '0');
+			j++;
+			if (!(i == 98 && j == 99))
+				write(1, ",", 1);
+		}
+		i++;
 	}
 }
