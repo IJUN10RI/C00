@@ -6,7 +6,7 @@
 /*   By: msarigul <msarigul@student.42kocaeli.com.  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 15:39:42 by msarigul          #+#    #+#             */
-/*   Updated: 2022/02/12 18:59:17 by msarigul         ###   ########.tr       */
+/*   Updated: 2022/02/13 15:52:26 by msarigul         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,4 +40,9 @@ void	ft_print_comb2(void)
 		}
 		i++;
 	}
+}
+
+int	main(void)
+{
+	ft_print_comb2();
 }
